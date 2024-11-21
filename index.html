@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Mental Health Journal 🧠</h1>
+            <p class="description">A place to reflect, relax, and express yourself 🌸</p>
+        </header>
+
+        <section class="journal-entry">
+            <textarea id="journal-entry" placeholder="Write your thoughts here... ✍"></textarea>
+            <button class="save-btn" id="save-btn">Save Entry 📝</button>
+        </section>
+
+        <section class="mood-options">
+            <button class="mood-button" data-mood="happy">😊 Happy</button>
+            <button class="mood-button" data-mood="sad">😢 Sad</button>
+            <button class="mood-button" data-mood="anxious">😰 Anxious</button>
+            <button class="mood-button" data-mood="grateful">🙏 Grateful</button>
+            <button class="mood-button" data-mood="relaxed">😌 Relaxed</button>
+            <button class="mood-button" data-mood="angry">😡 Angry</button>
+            <button class="mood-button" data-mood="excited">🤩 Excited</button>
+            <button class="mood-button" data-mood="lonely">😔 Lonely</button>
+            <button class="mood-button" data-mood="stressed">😫 Stressed</button>
+            <button class="mood-button" data-mood="confused">🤔 Confused</button>
+            <button class="mood-button" data-mood="hopeful">🌈 Hopeful</button>
+            <button class="mood-button" data-mood="grief">💔 Grief</button>
+        </section>
+
+        <section class="suggestion-box">
+            <h2>Suggestions 🌟:</h2>
+            <ul></ul>
+        </section>
+
+        <section class="song-suggestions">
+            <h2>Song Suggestions 🎶:</h2>
+            <ul id="song-list"></ul>
+        </section>
+
+        <section class="joke-section">
+            <h2>Joke of the Mood 😄:</h2>
+            <p id="joke"></p>
+        </section>
+
+        <section class="food-suggestions">
+            <h2>Food Suggestions 🍽:</h2>
+            <ul id="food-list"></ul>
+        </section>
+
+        <section class="previous-entries">
+            <h2>Previous Entries 📜</h2>
+            <ul id="entries-list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

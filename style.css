@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #fad0c4 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: linear-gradient(45deg, #f6d365 0%, #fda085 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+}
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+.journal-entry textarea {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    resize: none;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.save-btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    background: #ff6347;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background: #f50057;
+}
+.mood-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.mood-button {
+    background: linear-gradient(45deg, #ff6a88, #ffcc67);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 170px;
+}
+
+.mood-button:hover {
+    background: linear-gradient(45deg, #ffcc67, #ff6a88);
+    transform: translateY(-5px);
+}
+.suggestion-box {
+    display: none;
+    background: linear-gradient(45deg, #f3e7e9, #e3eeff);
+    padding: 20px;
+    border-left: 6px solid #ff4081;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+}
+
+.suggestion-box ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.suggestion-box li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.suggestion-box li:hover {
+    background: #e3054f;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.song-suggestions, .joke-section, .food-suggestions {
+    margin-top: 30px;
+    padding: 20px;
+    background: #821111;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.song-suggestions ul, .food-suggestions ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.song-suggestions li, .food-suggestions li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.joke-section p {
+    font-size: 1.2rem;
+    color: #e7d91a;
+}
+.suggestion-box.show {
+    display: block;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
